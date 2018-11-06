@@ -1,0 +1,13 @@
+- hosts: ios                  # (a) ヘッダーセクション
+  gather_facts: no
+
+  tasks:
+    - name: show version      # (b) show version実行タスク
+      ios_command:
+        commands:
+          - show version
+      register: result
+    
+    - name: debug             # (c) 結果出力タスク
+      debug:
+        msg: "{{ result.stdout_lines[0] }}"

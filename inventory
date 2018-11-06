@@ -1,0 +1,3 @@
+[ios] 
+TOKYO-L3SW01 ansible_host=10.10.10.254
+OSAKA-L3SW01 ansible_host=10.20.20.254

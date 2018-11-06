@@ -1,0 +1,9 @@
+- hosts: ios                   # (a) ヘッダーセクション
+  gather_facts: no
+
+  tasks:
+    - name: set snmp RO        # (b) SNMP設定タスク
+      ios_config:
+        lines:
+          - snmp-server community public RO
+        save_when: changed
