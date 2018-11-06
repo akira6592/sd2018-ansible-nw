@@ -1,0 +1,15 @@
+- hosts: ios                      # (a) ヘッダーセクション
+  gather_facts: no
+  
+  tasks:
+    - name: set syslog server     # (b) SyslogサーバーIPアドレス設定タスク
+      ios_logging:
+        dest: host
+        name: "{{ syslog_server }}"
+      notify:
+        - save
+
+  handlers:                       # (c) ハンドラーセクション
+    - name: save
+      ios_config:
+        save_when: always

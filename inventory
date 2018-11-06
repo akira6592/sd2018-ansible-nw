@@ -1,3 +1,15 @@
 [ios] 
 TOKYO-L3SW01 ansible_host=10.10.10.254
 OSAKA-L3SW01 ansible_host=10.20.20.254
+
+[tokyo]            # 拠点グループ「tokyo」
+TOKYO-L3SW01
+
+[osaka]            # 拠点グループ「osaka」
+OSAKA-L3SW01
+
+[east:children]    # エリアグループ「east」の配下に拠点グループ「tokyo」をネスト 
+tokyo
+
+[west:children]    # エリアグループ「west」の配下に拠点グループ「osaka」をネスト 
+osaka
