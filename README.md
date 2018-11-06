@@ -1,6 +1,10 @@
 # サンプルPlaybook
 ## リポジトリの説明
 [Software Design 2018年12月号](https://gihyo.jp/magazine/SD/archive/2018/201812) 特集1「[超速]入門 Ansible」内の第3章「Ansibleでネットワーク作業も自動化」のサンプルPlaybook一式です。
+### [master ブランチ](https://github.com/akira6592/sd2018-ansible-nw/tree/master)
+誌面に対応する Playbook 一式
+### [extra ブランチ](https://github.com/akira6592/sd2018-ansible-nw/tree/extra)
+応用編を加えた Playbook 一式
 
 ## ファイルの説明
 ### 01_show_version.yml
