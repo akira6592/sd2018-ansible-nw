@@ -15,7 +15,7 @@
 
 ### 03_set_logging.yml ([extra ブランチ](https://github.com/akira6592/sd2018-ansible-nw/tree/extra)のみ)
 - Cisco IOS ネットワーク機器に対して Syslog サーバーを設定する Playbook。
-- 誌面非掲載につき、詳細は [[Ansible] グループと変数を活用したネットワーク機器への Syslog サーバー追加](https://tekunabe.hatenablog.jp/entry/2018/12/01/ansible_sd_extra)へ。
+- 誌面非掲載につき、詳細は [[Ansible] グループと変数を活用したネットワーク機器への Syslog サーバー追加 (2018年12月上旬公開予定)](https://tekunabe.hatenablog.jp/entry/2018/12/01/ansible_sd_extra)へ。
 
 ## リンク集
 記事中に登場するリンクを以下に掲載します。
